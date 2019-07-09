@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black_a_color"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:text="关注"
+            />
+
+        <TextView
+            android:id="@+id/tv_title_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="为您推荐"
+            android:textColor="@color/black_a_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/btn_look_video"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:background="@color/green_d_color"
+            android:text="看视频"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white_a_color"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/btn_follower"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_follower"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/btn_add_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_add"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

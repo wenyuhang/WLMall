@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingTop="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/recy_img_header"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/btn_heart"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/icon_heart_one" />
+
+    <TextView
+        android:id="@+id/rect_tv_num"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/btn_heart"
+        android:layout_below="@id/btn_heart"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/recy_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_toLeftOf="@id/btn_heart"
+        android:layout_toRightOf="@id/recy_img_header"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recy_tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recy_tv_name"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/btn_heart"
+        android:layout_toRightOf="@id/recy_img_header"
+        android:textColor="@color/black_a_color"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/recy_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recy_tv_comment"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/btn_heart"
+        android:layout_toRightOf="@id/recy_img_header"
+        android:textSize="11sp" />
+
+</RelativeLayout>

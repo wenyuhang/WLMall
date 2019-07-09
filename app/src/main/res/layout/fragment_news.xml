@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wl.wlmall.desgin.LoadingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/loading_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_a_color">
+
+    <FrameLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.handmark.pulltorefresh.library.extras.recyclerview.PullToRefreshRecyclerView
+            android:id="@+id/recy_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:ptrMode="pullFromStart"
+            ></com.handmark.pulltorefresh.library.extras.recyclerview.PullToRefreshRecyclerView>
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/mRv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:overScrollMode="never"-->
+            <!--app:layoutManager="android.support.v7.widget.LinearLayoutManager" />-->
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@drawable/shape_main"
+            app:title="优享咨询"
+            app:titleTextColor="@android:color/white" />
+    </FrameLayout>
+</com.wl.wlmall.desgin.LoadingLayout>

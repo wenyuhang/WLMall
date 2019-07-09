@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wl.wlmall.desgin.LoadingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loading_layout"
+    android:background="@color/white_a_color">
+
+    <com.handmark.pulltorefresh.library.extras.recyclerview.PullToRefreshRecyclerView
+        android:id="@+id/recy_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ptrMode="pullFromStart" />
+</com.wl.wlmall.desgin.LoadingLayout>
